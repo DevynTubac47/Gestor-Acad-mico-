@@ -21,6 +21,8 @@ El proyecto consiste en una aplicación de ambiente web (solamente Backend) la c
   "role": "string"
 }
 
+```
+
 ### **Iniciar Sesión**
 - **URL**: `http://localhost:3002/academicSystem/v1/auth/login`
 - **Método**: `POST`
