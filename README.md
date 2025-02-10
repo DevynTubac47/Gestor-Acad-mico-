@@ -22,6 +22,7 @@ El proyecto consiste en una aplicación de ambiente web (solamente Backend) la c
 }
 
 ```
+- **Notas**: Si se desea registrar un alumno, el rol es por default. Si se desea registrar un profesor, se debe colocar el rol.
 
 ### **Iniciar Sesión**
 - **URL**: `http://localhost:3002/academicSystem/v1/auth/login`
@@ -33,7 +34,6 @@ El proyecto consiste en una aplicación de ambiente web (solamente Backend) la c
   "password": "string"
 }
 ```
-- **Notas**: Si se desea registrar un alumno, el rol es por default. Si se desea registrar un profesor, se debe colocar el rol.
 
 
 ---
