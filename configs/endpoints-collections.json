@@ -1,0 +1,88 @@
+{
+    "auth": {
+      "register": {
+        "url": "http://localhost:3002/academicSystem/v1/auth/register",
+        "method": "POST",
+        "body": {
+          "name": "string",
+          "surname": "string",
+          "username": "string",
+          "email": "string",
+          "password": "string",
+          "profilePicture": "file",
+          "phone": "string",
+          "role": "string"
+        },
+        "notes": [
+          "Si se desea registrar un alumno, el rol es por default.",
+          "Si se desea registrar un profesor, se debe colocar el rol."
+        ]
+      },
+      "login": {
+        "url": "http://localhost:3002/academicSystem/v1/auth/login",
+        "method": "POST",
+        "body": {
+          "email": "string",
+          "password": "string"
+        }
+      }
+    },
+    "student": {
+      "assignCourse": {
+        "url": "http://localhost:3002/academicSystem/v1/course/assignCourse",
+        "method": "POST",
+        "body": {
+          "userId": "ID de Usuario",
+          "nameCourse": "string"
+        }
+      },
+      "viewAssignedCourses": {
+        "url": "http://localhost:3002/academicSystem/v1/course/student/:uid/courses",
+        "method": "GET"
+      },
+      "updateProfile": {
+        "url": "http://localhost:3002/academicSystem/v1/user/updateUser/:uid",
+        "method": "PUT",
+        "body": {
+          "name": "string",
+          "surname": "string",
+          "username": "string",
+          "email": "string",
+          "phone": "string"
+        },
+        "notes": "Se pueden actualizar los atributos que se deseen incluyendo la contraseña."
+      },
+      "deleteProfile": {
+        "url": "http://localhost:3002/academicSystem/v1/user/deleteUser/:uid",
+        "method": "DELETE"
+      }
+    },
+    "teacher": {
+      "createCourse": {
+        "url": "http://localhost:3002/academicSystem/v1/course/createdCourse",
+        "method": "POST",
+        "body": {
+          "userId": "ID profesor",
+          "nameCourse": "string",
+          "description": "string"
+        }
+      },
+      "viewAssignedCourses": {
+        "url": "http://localhost:3002/academicSystem/v1/course/teacher/:uid/courses",
+        "method": "GET"
+      },
+      "updateCourse": {
+        "url": "http://localhost:3002/academicSystem/v1/course/updateCourse/:uid",
+        "method": "PUT",
+        "body": {
+          "nameCourse": "string",
+          "description": "string"
+        }
+      },
+      "deleteCourse": {
+        "url": "http://localhost:3002/academicSystem/v1/course/deleteCourse/:uid",
+        "method": "DELETE"
+      }
+    }
+  }
+  
